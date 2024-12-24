@@ -31,7 +31,7 @@
                       
                     </thead>
                     <tbody>
-                        <xsl:for-each select="livre">
+                        <xsl:for-each select="livre[@rendu='NON']">
                           <tr>
                               <td><xsl:value-of select="@id"></xsl:value-of></td>
                               <td><xsl:value-of select="@titre"></xsl:value-of></td>
