@@ -38,9 +38,12 @@
                               <td><xsl:value-of select="@titre"></xsl:value-of></td>
                               <td><xsl:value-of select="@dateEmprunt"></xsl:value-of></td>
                               <td><xsl:value-of select="@rendu"></xsl:value-of></td>
-                              <td><xsl:value-of select="count(livre)"></xsl:value-of></td>
                           </tr>
-                        </xsl:for-each>
+                         
+                        </xsl:for-each>   
+                        <tr>
+                            <td><xsl:value-of select="count(livre)"></xsl:value-of></td>
+                        </tr>
                     </tbody>
                 </table>
                 </xsl:for-each>
