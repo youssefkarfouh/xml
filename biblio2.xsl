@@ -17,36 +17,31 @@
                         <li>Nom : <xsl:value-of select="@nom"></xsl:value-of></li>
                         <li>Age : <xsl:value-of select="@age"></xsl:value-of></li>
                     </ul>
-                </xsl:for-each>
+              
                 
                 <table>
                     <thead>
                         <tr>
                           
-                                <th>Code</th>
-                                <th>Nom</th>
-                                <th>Age</th>
-                                 <th>Livre</th>
+                                <th>Id</th>
+                                <th>Titre</th>
+                                <th>Date</th>
+                                <th>Rendu</th>
                         </tr>
                       
                     </thead>
                     <tbody>
-                        <xsl:for-each select="/biblio/etudiant">
+                        <xsl:for-each select="livre">
                           <tr>
-                              <td><xsl:value-of select="@code"></xsl:value-of></td>
-                              <td><xsl:value-of select="@nom"></xsl:value-of></td>
-                              <td><xsl:value-of select="@age"></xsl:value-of></td>
-                              
-                              <td>
-                                  <xsl:for-each select="/biblio/etudiant/livre">
-                                      <xsl:value-of select="@titre"></xsl:value-of>
-                                  </xsl:for-each>
-                              </td>
-                              
+                              <td><xsl:value-of select="@id"></xsl:value-of></td>
+                              <td><xsl:value-of select="@titre"></xsl:value-of></td>
+                              <td><xsl:value-of select="@dateEmprunt"></xsl:value-of></td>
+                              <td><xsl:value-of select="rendu"></xsl:value-of></td>
                           </tr>
                         </xsl:for-each>
                     </tbody>
                 </table>
+                </xsl:for-each>
             </body>
         </html>
     </xsl:template>
