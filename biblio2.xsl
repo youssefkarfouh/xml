@@ -11,6 +11,13 @@
             </head>
             <body>
                 <h1>L dddiste des etudiants </h1>
+                <xsl:for-each select="/biblio/etudiant">
+                    <ul>
+                        <li>code : <xsl:value-of select="@code"></xsl:value-of></li>
+                        <li>Nom : <xsl:value-of select="@nom"></xsl:value-of></li>
+                        <li>Age : <xsl:value-of select="@age"></xsl:value-of></li>
+                    </ul>
+                </xsl:for-each>
             </body>
         </html>
     </xsl:template>
