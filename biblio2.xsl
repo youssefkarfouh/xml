@@ -26,6 +26,7 @@
                                 <th>Code</th>
                                 <th>Nom</th>
                                 <th>Age</th>
+                                 <th>Livre</th>
                         </tr>
                       
                     </thead>
@@ -35,6 +36,13 @@
                               <td><xsl:value-of select="@code"></xsl:value-of></td>
                               <td><xsl:value-of select="@nom"></xsl:value-of></td>
                               <td><xsl:value-of select="@age"></xsl:value-of></td>
+                              
+                              <td>
+                                  <xsl:for-each select="/biblio/etudiant/livre">
+                                      <xsl:value-of select="titre"></xsl:value-of>
+                                  </xsl:for-each>
+                              </td>
+                              
                           </tr>
                         </xsl:for-each>
                     </tbody>
