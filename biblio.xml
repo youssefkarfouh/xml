@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblio SYSTEM "file:/Users/youssefkarfouh/Desktop/enset%20master/XML/test.dtd">
+<?xml-stylesheet type="text/xsl" href="biblio2.xsl"?>
+<biblio>
+    <etudiant code="E1" nom="youssef" prenom="karfouh" age="24">
+        <livre id="L1" titre="react advanced" dateEmprunt="2020-10-10" rendu="NON"/>
+        <livre id="L2" titre="next js" dateEmprunt="2022-10-10" rendu="OUI"/>
+        <livre id="L3" titre="angular js" dateEmprunt="2024-10-10" rendu="OUI"/>
+    </etudiant>  
+    <etudiant code="E2" nom="aymane" prenom="farik" age="25">
+        <livre id="L1" titre="react advanced2" dateEmprunt="2020-10-10" rendu="NON"/>
+        <livre id="L2" titre="next js2" dateEmprunt="2022-10-10" rendu="OUI"/>
+        <livre id="L3" titre="angular js2" dateEmprunt="2024-10-12" rendu="OUI"/>
+    </etudiant>
+    
+</biblio>
