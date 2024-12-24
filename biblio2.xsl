@@ -27,16 +27,18 @@
                                 <th>Titre</th>
                                 <th>Date</th>
                                 <th>Rendu</th>
+                               <th>Livre emprunter</th>
                         </tr>
                       
                     </thead>
                     <tbody>
-                        <xsl:for-each select="livre[@rendu='NON']">
+                        <xsl:for-each select="livre">
                           <tr>
                               <td><xsl:value-of select="@id"></xsl:value-of></td>
                               <td><xsl:value-of select="@titre"></xsl:value-of></td>
                               <td><xsl:value-of select="@dateEmprunt"></xsl:value-of></td>
                               <td><xsl:value-of select="@rendu"></xsl:value-of></td>
+                              <td><xsl:value-of select="count(livre)"></xsl:value-of></td>
                           </tr>
                         </xsl:for-each>
                     </tbody>
