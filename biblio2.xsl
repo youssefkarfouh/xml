@@ -19,7 +19,7 @@
                     </ul>
               
                 
-                <table>
+                <table width="100%" border="1">
                     <thead>
                         <tr>
                           
@@ -36,7 +36,7 @@
                               <td><xsl:value-of select="@id"></xsl:value-of></td>
                               <td><xsl:value-of select="@titre"></xsl:value-of></td>
                               <td><xsl:value-of select="@dateEmprunt"></xsl:value-of></td>
-                              <td><xsl:value-of select="rendu"></xsl:value-of></td>
+                              <td><xsl:value-of select="@rendu"></xsl:value-of></td>
                           </tr>
                         </xsl:for-each>
                     </tbody>
