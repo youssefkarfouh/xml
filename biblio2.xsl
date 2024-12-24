@@ -39,7 +39,7 @@
                               
                               <td>
                                   <xsl:for-each select="/biblio/etudiant/livre">
-                                      <xsl:value-of select="titre"></xsl:value-of>
+                                      <xsl:value-of select="@titre"></xsl:value-of>
                                   </xsl:for-each>
                               </td>
                               
