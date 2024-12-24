@@ -18,6 +18,27 @@
                         <li>Age : <xsl:value-of select="@age"></xsl:value-of></li>
                     </ul>
                 </xsl:for-each>
+                
+                <table>
+                    <thead>
+                        <tr>
+                          
+                                <th>Code</th>
+                                <th>Nom</th>
+                                <th>Age</th>
+                        </tr>
+                      
+                    </thead>
+                    <tbody>
+                        <xsl:for-each select="/biblio/etudiant">
+                          <tr>
+                              <td><xsl:value-of select="@code"></xsl:value-of></td>
+                              <td><xsl:value-of select="@nom"></xsl:value-of></td>
+                              <td><xsl:value-of select="@age"></xsl:value-of></td>
+                          </tr>
+                        </xsl:for-each>
+                    </tbody>
+                </table>
             </body>
         </html>
     </xsl:template>
